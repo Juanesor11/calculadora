@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="calculadora">
+        <div class="resolvente">
+            <form>
+                <div class="inputs">
+                    <div class="input">
+                        <label for="a">a:</label>
+                        <input type="number" id="a">
+                    </div>
+                    <div class="input">
+                        <label for="b">b:</label>
+                        <input type="number" id="b">
+                    </div>
+                    <div class="input">
+                        <label for="c">c:</label>
+                        <input type="number" id="c">
+                    </div>
+                </div>
+                <button type="button" id="calcularCuadratica">Calcular</button>
+            </form>
+            <h2 id="numeros"></h2>
+            <h2 id="rta"></h2>
+        </div>
+        <div class="cubica">
+            <form>
+                <div class="inputs">
+                    <div class="input">
+                        <label for="a">a:</label>
+                        <input type="number" id="a3">
+                    </div>
+                    <div class="input">
+                        <label for="b">b:</label>
+                        <input type="number" id="b3">
+                    </div>
+                    <div class="input">
+                        <label for="c">c:</label>
+                        <input type="number" id="c3">
+                    </div>
+                    <div class="input">
+                        <label for="c">c:</label>
+                        <input type="number" id="d3">
+                    </div>
+                </div>
+                <button type="button" id="calcularCubica">Calcular</button>
+            </form>
+            <h2 id="rta3"></h2>
+        </div>
+    </div>
+
+    <script src="cuadratica.js"></script>
+    <script src="cubica.js"></script>
+</body>
+
+</html>

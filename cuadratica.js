@@ -7,11 +7,11 @@ document.getElementById('calcularCuadratica').onclick = function () {
     if (raiz < 0) {
         document.getElementById('rta').textContent = 'No hay soluciones reales'
     } else if (raiz === 0) {
-        let x = -b / (2 * a)
+        let x = (-b / (2 * a)).toFixed(2)
         document.getElementById('rta').textContent = `Una solucion en x =${x}`
     } else {
-        let x1 = (-b + Math.sqrt(raiz)) / (2 * a)
-        let x2 = (-b - Math.sqrt(raiz)) / (2 * a)
+        let x1 = ((-b + Math.sqrt(raiz)) / (2 * a)).toFixed(2)
+        let x2 = ((-b - Math.sqrt(raiz)) / (2 * a)).toFixed(2)
         document.getElementById('rta').textContent = `Dos soluciones en x =${x1} y x = ${x2}`
     }
 }
